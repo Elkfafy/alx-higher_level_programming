@@ -6,7 +6,7 @@ if __name__ == "__main__":
         print("s.")
     else:
         if (len(sys.argv) != 2):
-                print('s', end="")
+            print('s', end="")
         print(":")
         for i in range(1, len(sys.argv)):
             print("{:d}: {:s}".format(i, sys.argv[i]))
