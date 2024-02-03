@@ -24,6 +24,10 @@ class Square:
             raise TypeError(error_message)
         elif (len(value) != 2):
             raise TypeError(error_message)
+        elif (not isinstance(value[0], int)):
+            raise TypeError(error_message)
+        elif (not isinstance(value[1], int)):
+            raise TypeError(error_message)
         elif (value[0] < 0 or value[1] < 0):
             raise TypeError(error_message)
         else:
