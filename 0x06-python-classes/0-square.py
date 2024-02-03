@@ -2,6 +2,8 @@
 """
 This is a square class module
 """
+
+
 class Square:
     """
     Args:
