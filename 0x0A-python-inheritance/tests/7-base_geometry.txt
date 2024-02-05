@@ -29,3 +29,8 @@ Numbers:
    >>> bg.integer_validator("infnumber", int('inf'))
    Traceback (most recent call last):
    ValueError: invalid literal for int() with base 10: 'inf'
+
+:: with not integer
+   >>> bg.integer_validator("NAN, "hello")
+   Traceback (most recent call last):
+   TypeError: NAN must be an integer
