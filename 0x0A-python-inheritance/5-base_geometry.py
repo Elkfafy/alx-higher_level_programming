@@ -4,7 +4,7 @@ class
 """
 
 
-class BasGeometry:
+class BaseGeometry:
     """ class """
 
     pass
