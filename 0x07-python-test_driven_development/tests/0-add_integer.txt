@@ -1,0 +1,20 @@
+>>> add_integer = __import__("0-add_integer").add_integer
+
+functionality 5 + 10 = 15
+>>> add_integer(5, 10)
+15
+
+TypeError: should be integer or float
+>>> add_integer(5, "5f")
+Traceback (most recent call last):
+	...
+TypeError: b must be an integer
+
+>>> add_integer(None)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+check if we enter floats
+>>> add_integer(12.5, 10.5)
+22
