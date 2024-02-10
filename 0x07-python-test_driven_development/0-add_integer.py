@@ -4,7 +4,6 @@ module
 """
 
 
-
 def add_integer(a, b=98):
     """ add_integer function """
 
