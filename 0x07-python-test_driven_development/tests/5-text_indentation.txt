@@ -33,3 +33,8 @@ b.
 c?
 <BLANKLINE>
 d
+
+>>> text_indentation("a.    b")
+a.
+<BLANKLINE>
+b
