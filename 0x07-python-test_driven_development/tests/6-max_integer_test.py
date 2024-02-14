@@ -39,7 +39,22 @@ class TestMaxInteger(unittest.TestCase):
 
         self.assertEqual(max_integer("ahmed"), 'm')
 
-    def test_valid(self):
+    def test_at_end(self):
         """ test valid """
 
         self.assertEqual(max_integer([1, 2, 3]), 3)
+
+    def test_at_start(self):
+        """ test at start """
+
+        self.assertEqual(max_integer([3, 2, 1]), 3)
+
+    def test_at_middle(self):
+        """ test at middle """
+
+        self.assertEqual(max_integer([1, 3, 2]), 3)
+
+    def test_empty(self):
+        """ test empty """
+
+        self.assertEqual(max_integer([]), None)
