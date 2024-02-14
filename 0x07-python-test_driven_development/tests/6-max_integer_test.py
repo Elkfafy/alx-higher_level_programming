@@ -57,4 +57,4 @@ class TestMaxInteger(unittest.TestCase):
     def test_empty(self):
         """ test empty """
 
-        self.assertEqual(max_integer([1]), None)
+        self.assertEqual(max_integer([1]), 1)
