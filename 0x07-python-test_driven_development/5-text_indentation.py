@@ -17,5 +17,4 @@ def text_indentation(text):
         else:
             if (start == False or ch not in [' ', '\t']):
                 print(ch, end='')
-                continue
-            start = False
+                start = False
