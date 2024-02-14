@@ -10,6 +10,7 @@ def is_integer_or_float(num, err_msg):
     if (not isinstance(num, int) and not isinstance(num, float)):
         raise TypeError(err_msg)
 
+
 def is_matrix(matrix):
     """ matrix is a list """
 
@@ -27,6 +28,7 @@ def is_matrix(matrix):
     for alist in matrix:
         if size != len(alist):
             raise TypeError("Each row of the matrix must have the same size")
+
 
 def matrix_divided(matrix, div):
     """ matrix divided function """
