@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ rectangle module """
 
+
 class Rectangle:
     """ Rectangle class """
 
@@ -11,9 +12,11 @@ class Rectangle:
     @property
     def width(self):
         return self._width
+
     @property
     def height(self):
         return self._height
+
     @width.setter
     def width(self, val):
         if not isinstance(val, int):
@@ -21,6 +24,7 @@ class Rectangle:
         if val < 0:
             raise ValueError("width must be >= 0")
         self.__width = val
+
     @height.setter
     def height(self, val):
         if not isinstance(val, int):
