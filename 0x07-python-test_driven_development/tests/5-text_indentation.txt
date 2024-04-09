@@ -51,3 +51,8 @@ a.
 :
 <BLANKLINE>
 b
+
+>>> text_indentation("    a?    b   ")
+a?
+<BLANKLINE>
+b 
