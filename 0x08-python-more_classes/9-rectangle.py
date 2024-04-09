@@ -56,7 +56,10 @@ class Rectangle:
     def __str__(self):
         if self.width == 0 or self.height == 0:
             return ''
-        string = str(self.print_symbol)
+        try:
+            string = str(self.print_symbol)
+        except Exception:
+            string = type(self).print_symbol
         data = "\n".join([string * self.width for _ in range(self.height)])
         return data
 
