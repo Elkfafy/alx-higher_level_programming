@@ -5,4 +5,4 @@
 def is_same_class(obj, a_class):
     """ is same class function """
 
-    return obj is a_class and isinstance(obj, a_class)
+    return obj is a_class or isinstance(obj, a_class)
